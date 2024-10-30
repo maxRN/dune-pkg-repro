@@ -1,0 +1,8 @@
+(version 1)
+
+(build
+ (run pkg-config libpcre))
+
+(depends conf-pkg-config)
+
+(depexts pcre)

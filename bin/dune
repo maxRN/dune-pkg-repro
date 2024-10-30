@@ -1,0 +1,4 @@
+(executable
+ (public_name pkg_repro)
+ (name main)
+ (libraries pkg_repro))

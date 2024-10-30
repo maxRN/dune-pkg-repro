@@ -1,0 +1,42 @@
+(version 1.0.0~alpha5)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends
+ base-unix
+ bigarray-compat
+ camlp-streams
+ caqti
+ caqti-lwt
+ conf-libev
+ cstruct
+ dream-httpaf
+ dream-pure
+ dune
+ fmt
+ graphql_parser
+ graphql-lwt
+ lwt
+ lwt_ppx
+ lwt_ssl
+ logs
+ magic-mime
+ mirage-clock
+ mirage-crypto
+ mirage-crypto-rng
+ mirage-crypto-rng-lwt
+ multipart_form
+ multipart_form-lwt
+ ocaml
+ ptime
+ ssl
+ uri
+ yojson)
+
+(source
+ (fetch
+  (url
+   https://github.com/aantron/dream/releases/download/1.0.0-alpha5/dream-1.0.0-alpha5.tar.gz)
+  (checksum
+   sha256=05bc7f6aff94893c151f3a5bcdee3328920c69b3763fac49ba27348dc7745901)))
